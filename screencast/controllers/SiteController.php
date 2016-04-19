@@ -116,4 +116,9 @@ class SiteController extends Controller
             return $this->render('entry', ['model' => $model]);
         }
     }
+
+    public function  actionHello(){
+        $name = "German";
+        return $this->render('hello', array('name' =>$name));
+    }
 }
