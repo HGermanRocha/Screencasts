@@ -10,6 +10,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\UserForm;
 use app\models\EntryForm;
+use app\models\Country;
 
 class SiteController extends Controller
 {
@@ -110,7 +111,7 @@ class SiteController extends Controller
 
             //do something meaningful here about $model...
 
-            return $this->render('entry-confirm', ['model' => $model]);
+            return $this->render('entry-confirm', ['model'=>$model]);
         }
         else
         {
